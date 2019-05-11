@@ -1,18 +1,21 @@
 # Project Fovea
-<center>                      ______ ---                    </center> 
-<center>                  ___/      \___ ---                </center> 
-<center>             ____/     ___      \____               </center> 
-<center>            /         /*  \-         \ -            </center> 
-<center>            \____     \___/-     ____/ -            </center> 
-<center>                 \___        ___/ --                </center> 
-<center>                     \______/ ---                   </center> 
-<center>                                                    </center> 
-<center>             _________________________              </center> 
-<center>                 ┏━╸┏━┓╻ ╻┏━╸┏━┓                    </center> 
-<center>                 ┣╸ ┃ ┃┃┏┛┣╸ ┣━┫                    </center> 
-<center>                 ╹  ┗━┛┗┛ ┗━╸╹ ╹                    </center> 
-<center>____________________________________________________</center> 
-
+    <body>
+        <pre>
+                      ______ ---                    
+                  ___/      \___ ---                
+             ____/     ___      \____               
+            /         /*  \-         \ -            
+            \____     \___/-     ____/ -            
+                 \___        ___/ --                
+                     \______/ ---                   
+                                                    
+             _________________________               
+                 ┏━╸┏━┓╻ ╻┏━╸┏━┓                    
+                 ┣╸ ┃ ┃┃┏┛┣╸ ┣━┫                    
+                 ╹  ┗━┛┗┛ ┗━╸╹ ╹                    
+_____________________________________________________
+        </pre>
+    </body>
 This project is based:
   - YAD2K: https://github.com/allanzelener/YAD2K
   - Facenet by davidsandberg https://github.com/davidsandberg/facenet
