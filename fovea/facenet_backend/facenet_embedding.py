@@ -129,7 +129,7 @@ class facenet_handler():
             if len(imgs) == len(rects):
                 i = 0
                 for x in imgs:
-                    face = {'rect':None,'id':-1,'gender':None,'emotion':None,'emb':None}
+                    face = {'rect':None,'id':-1,'emb':None}
                     img = x
                     rect = rects[i]
                     face['rect'] = [rect.top(),rect.bottom(),rect.left(),rect.right()]
