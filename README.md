@@ -1,7 +1,4 @@
-# Project Fovea      
-                 ┏━╸┏━┓╻ ╻┏━╸┏━┓                    
-                 ┣╸ ┃ ┃┃┏┛┣╸ ┣━┫                    
-                 ╹  ┗━┛┗┛ ┗━╸╹ ╹                    
+# Project Fovea
 
 This project is based:
   - YAD2K: https://github.com/allanzelener/YAD2K
