@@ -19,7 +19,7 @@ def draw_img(src,vars):
     return -1   
 
 #Load Pre-trained YOLO Model
-f = facenet_handler('model_data')
+f = facenet_handler('../model_data')
 
 staring_vars = [{'name':'cam','var':cv2.VideoCapture(0)},{'name':'facenet_data', 'var':None},{'name':'kill_program','var':False}]  #Threaded ambient vars
 functions = [get_image_from_camera,draw_img] #functions to run on a loop
@@ -27,17 +27,22 @@ functions = [get_image_from_camera,draw_img] #functions to run on a loop
 #A helper tool to get multi-thread sync
 tsm = threaded_source_manipulation(functions,staring_vars)
 
+data = {'emb':[]} 
+
 #Main program loop
 while True:
     image = tsm.get_src()
     if image is not None:
         out = f.do_predict(image)
+        if out is not None:
+            for x in out:
+                data['emb'].append(x['emb'])
         tsm.push_variable_to_ambient('facenet_data',out)
     if tsm.vars['kill_program'] == True:
         break
+
 
 # Clean up
 cv2.destroyAllWindows()
 tsm.clean_up()
 tsm.vars['cam'].release() #Closes video file or capturing device.
-y.clean_up()
